@@ -1,0 +1,20 @@
+Input Mass	Matched Mass	Delta	Name	Formula	Ion	LMSD Examples
+520.3451	520.3409	.0042	LPC 18:1	C26H52NO7P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=LPC 18:1
+520.3451	520.3409	.0042	PC O-19:1	C27H54NO7P	[M-CH3]-	/resources/tools/chemdb_ontology?abbrev=PC O-19:1
+522.3916	522.3929	.0013	LPC O-19:0	C27H58NO6P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=LPC O-19:0
+524.2979	524.2994	.0015	LPS 18:0	C24H48NO9P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=LPS 18:0
+524.2979	524.2994	.0015	LPS O-18:1;O	C24H48NO9P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=LPS O-18:1;O
+524.2979	524.2994	.0015	LPC 15:1	C23H46NO7P	[M+Formate]-	/resources/tools/chemdb_ontology?abbrev=LPC 15:1
+524.2979	524.2994	.0015	LPE 18:1	C23H46NO7P	[M+Formate]-	/resources/tools/chemdb_ontology?abbrev=LPE 18:1
+524.2979	524.2994	.0015	LPC 14:1	C22H44NO7P	[M+OAc]-	/resources/tools/chemdb_ontology?abbrev=LPC 14:1
+524.2979	524.2994	.0015	LPE 17:1	C22H44NO7P	[M+OAc]-	/resources/tools/chemdb_ontology?abbrev=LPE 17:1
+675.504	675.5083	.0043	CerPE 34:1;O3	C36H73N2O7P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=CerPE 34:1;O3
+676.4916	676.4923	.0007	PE 31:0	C36H72NO8P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=PE 31:0
+676.4916	676.4923	.0007	CerP 34:1;O2	C34H68NO6P	[M+OAc]-	/resources/tools/chemdb_ontology?abbrev=CerP 34:1;O2
+676.4916	676.4923	.0007	PC 29:0	C37H74NO8P	[M-CH3]-	/resources/tools/chemdb_ontology?abbrev=PC 29:0
+701.5483	701.5491	.0008	PA O-37:1	C40H79O7P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=PA O-37:1
+701.5483	701.5492	.0009	TG 38:0	C41H78O6	[M+Cl]-	/resources/tools/chemdb_ontology?abbrev=TG 38:0
+703.5357	703.5396	.0039	CerPE 36:1;O3	C38H77N2O7P	[M-H]-	/resources/tools/chemdb_ontology?abbrev=CerPE 36:1;O3
+705.6389	705.6403	.0014	DG 42:1	C45H86O5	[M-H]-	/resources/tools/chemdb_ontology?abbrev=DG 42:1
+717.6024	717.6039	.0015	TG 42:2	C45H82O6	[M-H]-	/resources/tools/chemdb_ontology?abbrev=TG 42:2
+729.6756	729.6766	.0010	FAHFA 48:2;O	C48H90O4	[M-H]-	/resources/tools/chemdb_ontology?abbrev=FAHFA 48:2;O
