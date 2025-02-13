@@ -1,13 +1,20 @@
+import shutil
+import time
+import glob
+import csv
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
-import time
+
+with open('processed_chunks.txt', 'w', newline='', encoding='utf-8') as file:
+    file.write('')
 
 # Set path to manually installed ChromeDriver
-CHROME_DRIVER_PATH = '/opt/homebrew/bin/chromedriver'  # Default brew install location
+CHROME_DRIVER_PATH = '/opt/homebrew/bin/chromedriver'
 BASE_URL = "https://www.lipidmaps.org/resources/tools/bulk-structure-search/create?database=LMSD"
 
 # Configure driver options
@@ -87,6 +94,17 @@ def process_chunk(chunk):
         wait.until(EC.element_to_be_clickable(
             (By.XPATH, '//*[@id="job-status-text"]/div/a'))).click()
 
+        time.sleep(4) #Wait to ensure download is ready
+
+        tsv_files = glob.glob(os.path.expanduser('~/Downloads/*.tsv'))
+
+        # Sort files by modification time and get the most recent one
+        most_recent_tsv = max(tsv_files, key=os.path.getmtime)
+
+        # Move the most recent .tsv file to the destination directory
+        destination = '/Users/matias/Library/Mobile Documents/com~apple~CloudDocs/Work/LipidMaps/downloads'
+        shutil.move(most_recent_tsv, destination)
+
         # Wait for results to process
         time.sleep(3)  # Increased wait time
 
@@ -143,3 +161,5 @@ except Exception as e:
 
 finally:
     driver.quit()
+
+#Let's run extract_urls.py here
